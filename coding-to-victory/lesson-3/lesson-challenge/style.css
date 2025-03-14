@@ -1,0 +1,32 @@
+/* Lesson Challenge Day 3 - Checkerboard */
+
+body {
+    height: 90vh; /* Augments body height to center grid-container. Otherwise, body shrinks to size of grid-container and gives the illusion that grid-container is sticking to top of browser window (via Go Live server) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 8vh);
+    grid-auto-rows: minmax(8vh, auto);
+    border: black 1px solid;
+    box-shadow: 5px 10px lightgray;
+    text-align: center;
+    font-size: large;
+}
+
+div > .box, div > .box.swapRowColors {
+    font-family: arial;
+    font-weight: bolder;
+    align-content: center;
+    background-color: black;
+    color: gold;
+    font-size: 2rem;
+}
+
+.box:nth-child(odd), .box.swapRowColors:nth-child(even) {
+    background-color: white;
+    color: black;
+}
