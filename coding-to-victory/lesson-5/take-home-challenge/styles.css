@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Styles for the progress bar */
 body {
   display: flex;
@@ -160,4 +161,15 @@ hr {
   color: lightgray;
   border-radius: 25px;
   transition: width 0.9s ease-in-out;
+=======
+/* Example of using a downloaded image as a background */
+body {
+  background-image: url("images/blue-tit-7139677_640.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  height: 200px;
+>>>>>>> f586ba200f1e1b5501a888e1b0630b30d4e079ad
 }
