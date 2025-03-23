@@ -1,1 +1,49 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Skill Level</h1>
+      <div id="clickable-container">
+        <h2>Toggle for Skill Level 2</h2>
+        <label class="toggle-switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <div class="skills">
+          <h4 id="skill-level-1">Level 1 - 😔</h4>
+          <div class="skill-bar">
+            <div class="bar" id="sk-1"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div id="hide">
+            <h4 id="skill-level-2">Level 2 - 💪😁</h4>
+            <div>
+              <div class="skill-bar">
+                <div class="bar" id="sk-1"></div>
+                <div class="bar" id="sk-2"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h1>Hover over progress bar</h1>
+      <div id="progress-container">
+        <div id="progress-bar-inner">Bonus Challenge is 100% Done! 🎉</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
